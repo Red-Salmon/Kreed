@@ -235,7 +235,7 @@ MonoBehaviour:
   gridSize: 10
   tilePrefab: {fileID: -6755977643018709252, guid: 9b7d344e17bdb4641bdd170a13aab1f5,
     type: 3}
-  tileDist: 3
+  tileDist: 1.5
 --- !u!4 &1228431062
 Transform:
   m_ObjectHideFlags: 0
