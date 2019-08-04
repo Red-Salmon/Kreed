@@ -69,9 +69,6 @@ public class AbilityData : MonoBehaviour
 
         // Starting the enemy's attack
         StartCoroutine("Turn1");
-
-        // Incase all four of the player's abilities are passives
-        TurnEnd();
     }
 
     void Update()
@@ -113,6 +110,9 @@ public class AbilityData : MonoBehaviour
             topDisplay.text = "The enemy has killed the player in the first attack.";
             Debug.Log("Game Over!");
         }
+
+        // Incase all four of the player's abilities are passives
+        TurnEnd();
     }
 
     private void CheckVictory()
@@ -361,9 +361,31 @@ public class AbilityData : MonoBehaviour
 
     private void TurnEnd()
     {
-        //    if (!(abilityButton1.interactable | abilityButton1.interactable | abilityButton1.interactable | abilityButton1.interactable | abilityButton1.interactable))
-        //    {
-        //        turnCount++;
-        //    }
+        if (!(abilityButton1.interactable | abilityButton2.interactable | abilityButton3.interactable | abilityButton4.interactable | abilityButton5.interactable))
+        {
+            Debug.Log("Turn is over!");
+            turnCount++;
+            StartCoroutine("Turn3");
+        }
+    }
+
+    IEnumerator Turn3()
+    {
+        topDisplay.text = "Your Turn is over!";
+        yield return new WaitForSeconds(inDelay);
+        if (enemyStats.IsAlive())
+        {
+            topDisplay.text = "Enemy deals 10,000,000 damage to the player.";
+            player1.currentHealth = 0;
+            yield return new WaitForSeconds(inDelay);
+            topDisplay.text = "The player has been defeated.";
+            yield return new WaitForSeconds(inDelay);
+            topDisplay.text = "Press Escape to retry";
+        } else
+        {
+            topDisplay.text = "Congratulations! You have slain the Hydra.";
+            yield return new WaitForSeconds(inDelay);
+            topDisplay.text = "No more monsters currently available for battle in this prototype. Press Escape to replay.";
+        }
     }
 }

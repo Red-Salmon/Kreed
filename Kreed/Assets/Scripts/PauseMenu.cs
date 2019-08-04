@@ -51,7 +51,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
-    void Pause ()
+    public void Pause ()
     {
         PauseMenuUI.SetActive(true);
         //deactivates the battle panel, to make pause more obvious

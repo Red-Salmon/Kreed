@@ -4038,16 +4038,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hydra
       objectReference: {fileID: 0}
-    - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
-        type: 3}
-      propertyPath: maxHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
-        type: 3}
-      propertyPath: display
-      value: 
-      objectReference: {fileID: 1684905123}
     - target: {fileID: 639466098132708673, guid: 2af51b9c896340a47b6299aa03e865ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4124,18 +4114,26 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-
     - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
         type: 3}
       propertyPath: maxHealth
-      value: 400
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
         type: 3}
       propertyPath: display
       value: 
       objectReference: {fileID: 1684905123}
-
+    - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
+        type: 3}
+      propertyPath: display
+      value: 
+      objectReference: {fileID: 1684905123}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2af51b9c896340a47b6299aa03e865ae, type: 3}
 --- !u!114 &1988150558 stripped
@@ -4322,16 +4320,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
-        type: 3}
-      propertyPath: display
-      value: 
-      objectReference: {fileID: 1720392107}
-    - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
-        type: 3}
-      propertyPath: maxHealth
-      value: 51
-      objectReference: {fileID: 0}
     - target: {fileID: 639466098132708673, guid: 2af51b9c896340a47b6299aa03e865ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4408,7 +4396,16 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-
+    - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
+        type: 3}
+      propertyPath: display
+      value: 
+      objectReference: {fileID: 1720392107}
+    - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
+        type: 3}
+      propertyPath: maxHealth
+      value: 51
+      objectReference: {fileID: 0}
     - target: {fileID: 639466098132708678, guid: 2af51b9c896340a47b6299aa03e865ae,
         type: 3}
       propertyPath: display
@@ -4419,6 +4416,5 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 50
       objectReference: {fileID: 0}
-
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2af51b9c896340a47b6299aa03e865ae, type: 3}
