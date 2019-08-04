@@ -3,7 +3,7 @@ using UnityEditor;
 
 public static class PlayerStats
 {
-    private static string abil1, abil2, abil3, abil4, abil5;
+    public static string abil1, abil2, abil3, abil4, abil5;
 
     public static string Abil1
     {

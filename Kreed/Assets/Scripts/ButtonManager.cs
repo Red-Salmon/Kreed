@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -12,5 +13,12 @@ public class ButtonManager : MonoBehaviour
         //GlobalVariables.abil1 = abil1.text;
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void SelectAbil()
+    {
+        //private GameObject global1;
+        //global1.SaveData.x = 5;
+
     }
 }
