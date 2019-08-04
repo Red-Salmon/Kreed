@@ -85,7 +85,13 @@ public class AbilityData : MonoBehaviour
         topDisplay.text = "Enemy Turn";
         yield return new WaitForSeconds(inDelay);
         topDisplay.text = "Enemy does 50 damage to the player";
-        player1.TakePhyDamage(50);
+        if (initialResist >= 0)
+        {
+            player1.TakePhyDamage(50 * ((100 - initialResist) / 100));
+        } else
+        {
+            enemyStats.TakePhyDamage(50);
+        }
 
         if (player1.IsAlive())
         {
@@ -258,48 +264,87 @@ public class AbilityData : MonoBehaviour
         TurnEnd(); //check if all abilities have been used
     }
 
+    //Ability Specific variables
+    private int fireBuff = 1;
+    private int initialResist = 0;
+
     private void ActivateAbility(int x)
     {
         switch (x)
         {
             case 1:
                 //return "Ignius";
-                enemyStats.TakePhyDamage(10);
+                enemyStats.TakePhyDamage(10 * (1 + player1.percentBuff / 100) * fireBuff);
+                enemyStats.burning = true;
                 break;
             case 2:
                 //return "Scorch";
+                if (enemyStats.burning)
+                {
+                    enemyStats.TakePhyDamage(40 * (1 + player1.percentBuff / 100) * fireBuff);
+                } else
+                {
+                    enemyStats.TakePhyDamage(20 * (1 + player1.percentBuff / 100) * fireBuff);
+                }
+                enemyStats.burning = true;
                 break;
             case 3:
                 //return "Ashes";
-                enemyStats.TakePhyDamage(30);
+                enemyStats.TakePhyDamage(30 * (1 + player1.percentBuff / 100) * fireBuff);
+                enemyStats.burning = true;
                 break;
             case 4:
                 //return "Scald";
+                fireBuff = 2;
+                enemyStats.TakePhyDamage(10 * (1 + player1.percentBuff / 100));
+                enemyStats.wet = true;
                 break;
             case 5:
                 //return "Freeze";
+                if (enemyStats.wet)
+                {
+                    enemyStats.TakePhyDamage(45 * (1 + player1.percentBuff / 100));
+                }
+                else
+                {
+                    enemyStats.TakePhyDamage(15 * (1 + player1.percentBuff / 100));
+                }
+                enemyStats.wet = true;
                 break;
             case 6:
                 //return "Tsunami";
-                enemyStats.TakePhyDamage(50);
+                enemyStats.TakePhyDamage(50 * (1 + player1.percentBuff / 100));
+                enemyStats.wet = true;
                 break;
             case 7:
                 //return "Curse";
+                enemyStats.cursed = true;
                 break;
             case 8:
                 //return "Leech";
+                if (enemyStats.cursed)
+                {
+                    enemyStats.currentHealth = Mathf.Ceil(enemyStats.currentHealth / 2);
+                }
                 break;
             case 9:
                 //return "Soul Slice";
+                if (enemyStats.cursed)
+                {
+                    enemyStats.currentHealth = Mathf.Ceil(enemyStats.currentHealth / 3);
+                }
                 break;
             case 10:
                 //return "Aura guard";
+                initialResist = 100;
                 break;
             case 11:
                 //return "Earth guard";
+                initialResist = 50;
                 break;
             case 12:
                 //return "mirror guard";
+                initialResist = -100;
                 break;
             case 13:
                 //return "elixir";

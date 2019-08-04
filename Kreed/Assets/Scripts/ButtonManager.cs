@@ -8,6 +8,7 @@ public class ButtonManager : MonoBehaviour
 {
     public int totalAbil;
     public TMPro.TextMeshProUGUI abilityDetails;
+    public TMPro.TextMeshProUGUI abilityCount;
 
     public Button startLevel;
     public Button abilitySelectButton;
@@ -33,6 +34,8 @@ public class ButtonManager : MonoBehaviour
         } else
         {
             totalAbil++;
+            abilityCount.text = totalAbil.ToString() + "/5";
+            
             switch (totalAbil)
             {
                 case 1:
@@ -67,16 +70,16 @@ public class ButtonManager : MonoBehaviour
                 abilityDetails.text = "Deals 10 fire damage";
                 break;
             case 2:
-                abilityDetails.text = "Deal 10 fire damage, if enemy was attacked with fire damage, double this damage";
+                abilityDetails.text = "Deal 20 fire damage, if enemy was attacked with fire damage, double this damage";
                 break;
             case 3:
                 abilityDetails.text = "Deals 30 fire damage";
                 break;
             case 4:
-                abilityDetails.text = "Deal 10 water damage, enemy takes 50% more damage from fire damage for 1 turn ";
+                abilityDetails.text = "Deal 10 water damage, enemy takes double damage from fire damage";
                 break;
             case 5:
-                abilityDetails.text = "Deal 15 water damage, if enemy was attacked with fire damage, triple this damage";
+                abilityDetails.text = "Deal 15 water damage, if enemy was attacked with water damage, triple this damage";
                 break;
             case 6:
                 abilityDetails.text = "Deal 50 water damge";
