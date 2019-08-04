@@ -3904,6 +3904,8 @@ MonoBehaviour:
   totalAbil: 0
   abilityDetails: {fileID: 306737156}
   startLevel: {fileID: 647755003}
+  abilitySelectButton: {fileID: 2028018727}
+  selectedAbility: 0
 --- !u!1 &1391760143
 GameObject:
   m_ObjectHideFlags: 0
@@ -5619,6 +5621,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953204845}
   m_CullTransparentMesh: 0
+--- !u!114 &2028018727 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1423766398066344835, guid: 658dd044b1242724ab7382041ee989df,
+    type: 3}
+  m_PrefabInstance: {fileID: 1763957876}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2048776337
 PrefabInstance:
   m_ObjectHideFlags: 0

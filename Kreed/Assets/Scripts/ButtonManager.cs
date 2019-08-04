@@ -8,7 +8,11 @@ public class ButtonManager : MonoBehaviour
 {
     public int totalAbil;
     public TMPro.TextMeshProUGUI abilityDetails;
+
     public Button startLevel;
+    public Button abilitySelectButton;
+
+    public int selectedAbility;
 
     public void Awake()
     {
@@ -17,26 +21,46 @@ public class ButtonManager : MonoBehaviour
 
     public void LoadLevel()
     {
-        PlayerPrefs.SetInt("ab1", 1);
-        PlayerPrefs.SetInt("ab2", 2);
-        PlayerPrefs.SetInt("ab3", 4);
-        PlayerPrefs.SetInt("ab4", 8);
-        PlayerPrefs.SetInt("ab5", 14);
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void SelectAbil()
     {
-        totalAbil++;
         if (totalAbil >= 5)
         {
             startLevel.interactable = true;
+            abilitySelectButton.interactable = false;
+        } else
+        {
+            totalAbil++;
+            switch (totalAbil)
+            {
+                case 1:
+                    PlayerPrefs.SetInt("ab1", selectedAbility);
+                    break;
+                case 2:
+                    PlayerPrefs.SetInt("ab2", selectedAbility);
+                    break;
+                case 3:
+                    PlayerPrefs.SetInt("ab3", selectedAbility);
+                    break;
+                case 4:
+                    PlayerPrefs.SetInt("ab4", selectedAbility);
+                    break;
+                case 5:
+                    PlayerPrefs.SetInt("ab5", selectedAbility);
+                    startLevel.interactable = true;
+                    abilitySelectButton.interactable = false;
+                    break;
+            }
         }
     }
 
     public void ShowAbil(int x)
     {
+
+        selectedAbility = x;
+
         switch (x)
         {
             case 1:
