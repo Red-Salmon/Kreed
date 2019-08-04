@@ -35,7 +35,7 @@ public class ButtonManager : MonoBehaviour
         {
             totalAbil++;
             abilityCount.text = totalAbil.ToString() + "/5";
-
+            
             switch (totalAbil)
             {
                 case 1:
