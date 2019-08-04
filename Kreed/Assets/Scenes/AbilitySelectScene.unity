@@ -1661,7 +1661,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.8301887, g: 0.7818148, b: 0.6696333, a: 0}
+  m_BackGroundColor: {r: 0.7830189, g: 0.7631101, b: 0.7202296, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1940,15 +1940,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1423766398066344834, guid: 658dd044b1242724ab7382041ee989df,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1423766398066344835, guid: 658dd044b1242724ab7382041ee989df,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423766398066344834, guid: 658dd044b1242724ab7382041ee989df,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 658dd044b1242724ab7382041ee989df, type: 3}
@@ -2420,15 +2420,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1423766398066344834, guid: 658dd044b1242724ab7382041ee989df,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1423766398066344835, guid: 658dd044b1242724ab7382041ee989df,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423766398066344834, guid: 658dd044b1242724ab7382041ee989df,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 658dd044b1242724ab7382041ee989df, type: 3}
@@ -3720,15 +3720,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1423766398066344834, guid: 658dd044b1242724ab7382041ee989df,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1423766398066344835, guid: 658dd044b1242724ab7382041ee989df,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423766398066344834, guid: 658dd044b1242724ab7382041ee989df,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 658dd044b1242724ab7382041ee989df, type: 3}
