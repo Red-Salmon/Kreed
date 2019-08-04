@@ -1144,6 +1144,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1423766397302132406, guid: 658dd044b1242724ab7382041ee989df,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423766397302132406, guid: 658dd044b1242724ab7382041ee989df,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 44.999
+      objectReference: {fileID: 0}
     - target: {fileID: 1423766397302132361, guid: 658dd044b1242724ab7382041ee989df,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -3739,6 +3749,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423766397302132406, guid: 658dd044b1242724ab7382041ee989df,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423766397302132406, guid: 658dd044b1242724ab7382041ee989df,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 44.999
       objectReference: {fileID: 0}
     - target: {fileID: 1423766397302132361, guid: 658dd044b1242724ab7382041ee989df,
         type: 3}
