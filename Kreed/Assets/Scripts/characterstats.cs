@@ -5,12 +5,18 @@ using UnityEngine.UI;
 
 public class CharacterStats : MonoBehaviour
 {
-
+    // Health
     public float maxHealth;
     public float currentHealth;
 
+    // Buffs and resistances
     public float percentResist;
     public float percentBuff;
+
+    // Status Effects
+    public bool cursed;
+    public bool burning;
+    public bool wet;
 
     public TMPro.TextMeshProUGUI display;
 
@@ -18,6 +24,10 @@ public class CharacterStats : MonoBehaviour
     {
         currentHealth = maxHealth;
         percentBuff = 0;
+
+        cursed = false;
+        burning = false;
+        wet = false;
     }
 
     
