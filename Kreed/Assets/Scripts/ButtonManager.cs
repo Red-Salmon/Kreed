@@ -8,6 +8,7 @@ public class ButtonManager : MonoBehaviour
 {
     public int totalAbil;
     public TMPro.TextMeshProUGUI abilityDetails;
+    public TMPro.TextMeshProUGUI abilityCount;
 
     public Button startLevel;
     public Button abilitySelectButton;
@@ -33,6 +34,8 @@ public class ButtonManager : MonoBehaviour
         } else
         {
             totalAbil++;
+            abilityCount.text = totalAbil.ToString() + "/5";
+
             switch (totalAbil)
             {
                 case 1:
