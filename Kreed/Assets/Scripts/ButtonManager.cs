@@ -11,14 +11,17 @@ public class ButtonManager : MonoBehaviour
         //public TMPro.TextMeshProUGUI abil1;
 
         //GlobalVariables.abil1 = abil1.text;
+        PlayerPrefs.SetInt("ab1", 1);
+        PlayerPrefs.SetInt("ab2", 2);
+        PlayerPrefs.SetInt("ab3", 4);
+        PlayerPrefs.SetInt("ab4", 8);
+        PlayerPrefs.SetInt("ab5", 14);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void SelectAbil()
     {
-        //private GameObject global1;
-        //global1.SaveData.x = 5;
-
+        //public AbilityData coor1;
     }
 }
